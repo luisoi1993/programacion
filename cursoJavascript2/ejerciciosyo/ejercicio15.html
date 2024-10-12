@@ -1,0 +1,61 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 12.</title>
+    </head>
+    <body>
+      <script>
+    
+       /*15) Programa una función para convertir números de base binaria a decimal 
+       y viceversa, pe. miFuncion(100,2) devolverá 4 base 10.
+        */
+
+        const binarioDecimal = (numero = undefined,eleccion = undefined)=>{
+            if(numero === undefined)return console.warn("No ingresaste un numero");
+
+            if(eleccion === undefined)return console.warn("No ingresaste a que base cambiar");
+
+            if(typeof numero !== "number") return console.warn("El tipo de dato que ingresaste no es un numero");
+
+            if(typeof decimal !== "number") return console.warn("El tipo de base que ingresaste no es un numero");
+
+            
+
+        }
+
+        const convertirGrados =(grados= undefined, unidad= undefined)=>{
+            if(grados === undefined)return console.warn("No ingresaste grados a convertir");
+
+            if(typeof grados !== "number")return console.error(`El valor ${grados} ingresado , No es un numero`);
+
+            if(unidad === undefined)return console.warn("No ingresaste el tipo de grados a convertir");
+
+            if(typeof unidad !== "string")return console.error(`EL valor  ${unidad} ingresado , NO es una cadena de texto`);
+
+            if(unidad.length !==1 ||/(C|F)!/.test(unidad)) return console.warn("Valor de unidad no reconocido");
+
+            if(unidad === "C"){
+                return console.info(`{grados}C = ${Math.round((grados * (9/5))+32)}F`);
+            }
+
+            if(unidad === "F"){
+                return console.info(`{grados}F = ${Math.round(((grados- 32) * (5/9)))}C`);
+            }
+        }
+        
+    convertirGrados();
+    convertirGrados("2");
+    convertirGrados(2);
+    convertirGrados(2,true);
+    convertirGrados(2,"Hola");
+    convertirGrados(2, "E");
+    convertirGrados(2, "C");
+    convertirGrados(100, "C");
+    convertirGrados(100 ,"F");
+      </script>  
+
+    </body>
+    </html>

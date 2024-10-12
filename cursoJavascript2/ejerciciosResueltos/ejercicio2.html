@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.</title>
+</head>
+<body>
+  <script>
+   /*  2) Programa una función que te devuelva el texto recortado según 
+   el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+    */
+  
+const recortarTexto =(cadena = "",longitud = undefined) =>
+(!cadena)
+?console.warn("No ingresaste una cadena de texto")
+:(longitud === undefined)
+?console.warn("No ingresaste la longitud para recortar el texto")
+:console.info(cadena.slice(0, longitud));
+
+recortarTexto("Hola mundo",4);
+recortarTexto();
+recortarTexto("Hola Hola");
+recortarTexto("",5);
+  </script>  
+</body>
+</html>

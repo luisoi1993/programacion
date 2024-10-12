@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10.</title>
+</head>
+<body>
+  <script>
+
+   /*10) Programa una función que reciba un número y evalúe 
+   si es capicúa o no (que se lee igual en un sentido que en otro),
+    pe. miFuncion(2002) devolverá true.
+   */
+const capicua = (numero = undefined)=>{
+    let numero2 = numero.toString().split("").reverse().join("");
+
+    if(numero == numero2){
+        console.log(`El numero ${numero} es igual que el numero ${numero2}`);
+    }else{
+        console.log(`El numero ${numero} es diferente que el numero ${numero2}`);
+    }
+}
+
+capicua(20);
+capicua(22);
+ 
+
+  </script>  
+</body>
+</html>

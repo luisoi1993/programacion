@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.</title>
+</head>
+<body>
+  <script>
+   /*7) Programa una función que valide si una palabra o frase dada, 
+   es un palíndromo (que se lee igual en un sentido que en otro),
+    pe. mifuncion("Salas") devolverá true.
+    */
+ const palindromo = (palabra ="")=>{
+     if(!palabra) return console.warn("No ingresaste una palabra o frase");
+
+     palabra = palabra.toLowerCase();
+    let alReves = palabra.split("").reverse().join("");
+
+    return(palabra === alReves)
+    ?console.info(`Si es palindromo, Palabra original ${palabra}, Palabra al reves${alReves}`)
+    :console.info(`No es palindromo, Palabra original ${palabra}, Palabra al reves ${alReves}`);
+ }
+
+ palindromo();
+ palindromo("hola mundo");
+ palindromo("Salas");
+  </script>  
+</body>
+</html>

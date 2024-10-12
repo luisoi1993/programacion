@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1.</title>
+</head>
+<body>
+  <script>
+   /*  2) Programa una función que te devuelva el texto recortado según 
+   el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+    */
+  
+
+function nuevaCadena(cadena = "",numero = 0){
+    let cadena2 = cadena.substr(0,numero);
+    if(!cadena){
+        console.warn("No ingresaste una cadena");
+    }else{
+        
+        console.info(`La nueva cadena es "${cadena2}"`);
+    }
+}
+
+nuevaCadena();
+nuevaCadena("Skinhead oi oi",4);
+  </script>  
+</body>
+</html>

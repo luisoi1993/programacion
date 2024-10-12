@@ -1,0 +1,35 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 21.</title>
+    </head>
+    <body>
+      <script>
+    
+        /*21) Programa una función que dado un array numérico devuelve otro array 
+        con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25].
+        */
+
+    const arrayCuadrado =(arr1= undefined)=>{
+        if(arr1 === undefined)return console.warn("no ingresaste un array");
+
+        if( arr1 instanceof Array)return console.error("El valos que ingresaste no es un arreglo");
+
+       let arr2 = [arr1.length];
+
+       for(let i = 0;i<arr1.length;i++){
+           arr2[i]= arr1[i]*arr1[i];
+       }
+
+       return console.log(arr2);
+    }
+       
+arrayCuadrado([1,3,4]);
+        
+      </script>  
+
+    </body>
+    </html>

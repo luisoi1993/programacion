@@ -1,0 +1,42 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 22.</title>
+    </head>
+    <body>
+      <script>
+    
+        /*22) Programa una función que dado un array devuelva el número mas alto y 
+        el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60].
+        */
+
+        const arrayMinMax=(arr = undefined)=>{
+            if(arr === undefined)return console.warn("No ingresaste un array de numeros.");
+
+            if(!(arr instanceof Array))return console.error("El valor que ingresaste no es un arreglo");
+
+            if(arr.length === 0)return console.error("El arreglo esta vacio");
+
+            for(let num of arr){
+            
+                if(typeof num !== "number")return console.error(`El valor "${num}" ingresado, No es un número`);
+            }
+
+            return console.info(`Arreglo original:${arr}\nValor mayor: ${Math.max(...arr)},\nCalor menor: ${Math.min(...arr)}`);
+
+        }
+
+        arrayMinMax();
+        arrayMinMax([]);
+        arrayMinMax([2,3,true]);
+        arrayMinMax([1,4,5,99,-60]);
+
+
+        
+      </script>  
+
+    </body>
+    </html>

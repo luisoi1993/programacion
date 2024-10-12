@@ -1,0 +1,37 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 12.</title>
+    </head>
+    <body>
+      <script>
+    
+       /*13) Programa una función que determine si un número es par o
+        impar, pe. miFuncion(29) devolverá Impar.
+       */
+
+
+        const numeroParImpar = (numero = undefined)=>{
+            if(numero === undefined)return console.warn("No ingresaste un numero");
+
+            if(typeof numero !== "number")return console.error(`El valor "${numero}" ingresado no es un numero`);
+
+            return ((numero % 2)===0)
+            ?console.info(`El numero ${numero} es Par`)
+            :console.info(`El numero ${numero} es impar`)
+        }
+
+
+        numeroParImpar();
+        numeroParImpar("23");
+        numeroParImpar(-398);
+        numeroParImpar(19);
+
+
+    
+      </script>  
+    </body>
+    </html>

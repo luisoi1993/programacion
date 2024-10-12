@@ -1,0 +1,44 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 15.</title>
+    </head>
+    <body>
+      <script>
+    
+       /*16) Programa una función que devuelva el monto final después de aplicar un
+        descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800.
+        */
+
+        const descuento =(numero = undefined,descuento = undefined)=>{
+            if(numero === undefined)return console.warn("No ingresaste el numero a convertir");
+
+            if(typeof numero !== "number")return console.error(`El valor ${numero} ingresado, no es un numero`);
+
+            if(descuento === undefined)return console.warn("No ingresaste el porcentaje a descontar");
+
+            if(typeof numero !== "number")return console.error(`El valor de un porcentaje ${descuento} no es un numero`);
+
+            if(descuento < 0 || descuento > 100)return console.error("El descuento no puede ser mayor que 100 o menor 1ue 0");
+
+            let resta = 0, total = 0;
+
+            resta = (numero /100) * descuento;
+
+            total = numero - resta ;
+
+            return console.log(total);
+        }
+
+        descuento();
+        descuento(100);
+        descuento({});
+        descuento(100,10);
+        descuento(3200,20);
+      </script>  
+
+    </body>
+    </html>

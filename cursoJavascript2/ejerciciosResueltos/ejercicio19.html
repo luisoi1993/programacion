@@ -1,0 +1,33 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 19.</title>
+    </head>
+    <body>
+      <script>
+    
+        /*19) Programa una función que valide que un texto sea un nombre válido,
+         pe. miFuncion("Jonathan MirCha") devolverá verdadero.
+        */
+       const validarNombre = (nombre = "")=>{
+           if(!nombre)return console.warn("no ingresaste un nombre");
+
+           if(typeof nombre !== "string")return console.error(`El valor ${nombre} ingresado, no es una cadena de texto`);
+
+           let expReg = /^[A-Za-ZÑñÁáÉéÍíÓóÚúüÜ\s]+$/g.test(nombre);
+
+           return(expReg)
+           ?console.info(`"${nombre}", es un nombre valido`)
+           :console.warn(`"${nombre}",No es un nombre valido`);
+       }
+
+       validarNombre();
+
+        
+      </script>  
+
+    </body>
+    </html>
