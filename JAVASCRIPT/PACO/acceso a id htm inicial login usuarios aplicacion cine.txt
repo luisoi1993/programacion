@@ -1,0 +1,32 @@
+
+	js
+	
+	
+	
+
+	var array_email = ["peericodelospalotes@gmail.com", "luis@hjotmai.com", "maria@nisu.es"];
+	var array_pass  = ["154367", "981600" , "876543"];
+	
+	funciton myFunction()
+	{
+		if (document.getElemenByid("email_login").text = "uiuouoi"
+		{
+		
+		}
+		
+		if (document.getElemenByid("pass_login").text = "uiuouoi"
+		{
+		
+		}
+	
+	
+	}
+	
+	
+	
+	html
+	
+	
+	<input type="text" value="Introducir email" id="email_login">
+	<input type="text" value="Introducir pass" id="pass_login">
+	<button onclick="myFunction()">Click me</button>

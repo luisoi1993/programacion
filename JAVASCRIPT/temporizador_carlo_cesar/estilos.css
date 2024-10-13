@@ -1,0 +1,60 @@
+.pause{
+	width:5px;
+	height:5px;
+	padding:20px;
+	background-image:url('./pause.png');
+	cursor:pointer;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:middle;
+}
+
+.play{
+	width:5px;
+	height:5px;
+	padding:20px;
+	background-image:url('./play.png');
+	cursor:pointer;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:middle;
+	
+}
+
+.resetear{
+	width:5px;
+	height:5px;
+	padding:20px;
+	background-image:url('./resetear.png');
+	cursor:pointer;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:middle;
+}
+
+.loop{
+	width:5px;
+	height:5px;
+	padding:20px;
+	background-image:url('./loop.png');
+	cursor:pointer;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:middle;
+}
+
+table {
+	width:30%;
+	margin:auto;
+	padding:30px;
+	text-align:center;
+}
+
+td {
+	font-size:60px;	
+}
+
+li{
+	list-style:none;
+	font-size:30px;
+}

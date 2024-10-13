@@ -1,0 +1,18 @@
+.raizS{
+	list-style-image:url('./carpetapadrea.png');
+	cursor:pointer;
+}
+
+.hijoS{
+	list-style-image:url('./carpetahijoa.png');
+	cursor:pointer;
+}
+.raiz{
+	list-style-image:url('./carpetapadre.png');
+	cursor:pointer;
+}
+
+.hijo{
+	list-style-image:url('./carpetahijo.png');
+	cursor:pointer;
+}

@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+  <TITLE>Ejemplo de imagenes</TITLE> 
+  <SCRIPT LANGUAGE="JavaScript">
+      if (document.images) {
+      var activado=new Image();
+      activado.src="./moto1.jpg";
+      var desactivado= new Image();
+      desactivado.src="./moto2.jpg";
+    }
+    function activar(nombreImagen) {
+      if (document.images) {
+        document[nombreImagen].src=activado.src; }
+    }
+    function desactivar(nombreImagen) {
+      if (document.images) {
+        document[nombreImagen].src=desactivado.src; }
+    }
+	   	  //funcionaes para trabajar con metodos 
+   function dobleancho(nombreImagen) 
+   {  document[nombreImagen].width=document[nombreImagen].width*2; 
+   } 
+   function doblealto(nombreImagen) 
+   { document[nombreImagen].height=document[nombreImagen].height*2; 
+   }    
+   function mitadancho(nombreImagen) 
+   { document[nombreImagen].width=document[nombreImagen].width/2; 
+   } 
+   function mitadalto(nombreImagen) 
+   { document[nombreImagen].height=document[nombreImagen].height/2; 
+   }
+  </SCRIPT>
+</HEAD>
+<BODY>
+<A HREF="mipagina.html" 
+onMouseOver="activar('prueba');"
+onMouseOut="desactivar('prueba');">
+    <IMG NAME="prueba" SRC="./moto2.jpg" BORDER=0>
+   </A>
+<a href="javascript:dobleancho('prueba')">Doble ancho</a><br> 
+<a href="javascript:doblealto('prueba')">Doble Alto</a><br> 
+<a href="javascript:mitadancho('prueba')">Mitad ancho</a><br> 
+<a href="javascript:mitadalto('prueba')">Mitad Alto</a><br> 
+</BODY>
+</HTML>

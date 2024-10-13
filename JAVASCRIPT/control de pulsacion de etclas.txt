@@ -1,0 +1,14 @@
+document.addEventListener("keydown", keyDownTextField, false);
+
+function keyDownTextField(e) {
+var keyCode = e.keyCode;
+  if(keyCode==8) {
+  chequear_submit();
+  } 
+  if(keyCode==27) {
+  cerrar();
+  } 
+  if(keyCode==13) {
+  chequear_submit();
+  } 
+}

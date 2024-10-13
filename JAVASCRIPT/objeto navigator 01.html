@@ -1,0 +1,31 @@
+<!-- Manual de JavaScript de WebEstilo.com --> 
+<HTML> 
+<HEAD> 
+<title>Ejemplo de JavaScript</title> 
+<script LANGUAGE="JavaScript"> 
+ var i=1; 
+ var titulooriginal = document.title; 
+function cambiarTitulo() 
+   { 
+document.title = titulooriginal.substring(0,i); 
+i++; 
+if (i>titulooriginal.length) i=0;
+setTimeout('cambiarTitulo()',100); 
+}
+cambiarTitulo();    
+
+</script> 
+</HEAD> 
+<BODY> 
+<script LANGUAGE="JavaScript"> 
+
+ document.write("Navigator <b>alinkColor </b>: " + document.alinkColor + "<br>"); 
+ document.write("Navigator <b>lastModified</b>: " +document.lastModified + "<br>"); 
+ document.write("Document <b>bgColor</b>: " + document.bgColor + "<br>"); 
+document.write("Document <b>fgColor</b>: " + document.fgColor + "<br>"); 
+document.write("Document <b>referrer</b>: " + document.referrer + "<br>"); 
+
+
+</script> 
+</BODY> 
+</HTML> 

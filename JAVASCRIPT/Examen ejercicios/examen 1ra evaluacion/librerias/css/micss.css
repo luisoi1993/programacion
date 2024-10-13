@@ -1,0 +1,183 @@
+/*Fuentes*/
+@font-face{
+	font-family:"Montserrat-Medium";
+	src: url("./../../fuentes/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face{
+	font-family:"Anton-Regular";
+	src: url("./../../fuentes/Anton/Anton-Regular.ttf");
+}
+
+@font-face{
+	font-family:"JosefinSans-Regular";
+	src: url("./../../fuentes/Josefin_Sans/static/JosefinSans-Regular.ttf");
+}
+
+
+.mistitulos{
+	font-family:"Montserrat-Medium";
+}
+
+.mistextos{
+	font-family:"JosefinSans-Regular";
+}
+table{
+	width:100%;
+}
+/*REGISTRO*/
+/*Validación de campos*/
+
+.micampoerror{
+	border:2px solid red;
+}
+
+.micampovalido{
+	border:2px solid green;
+}
+
+.micamponormal{
+	border:2px solid blue;
+}
+
+.deshabilitado{
+	background-color:rgb(200,200,200);
+}
+/*Decoración registro*/
+.misombra{
+   box-shadow: -6px 20px 30px black;
+}
+
+
+.milogo{
+	float:left;
+}
+
+.micartel-title{
+  font-size:15px;
+  text-align:center;
+}
+
+.micartel-reserva{
+	max-width:80%;
+}
+
+.mipromocion{
+	max-width:80%;
+}
+.milink{
+	text-decoration:none;
+}
+
+.misinopsis{
+	font-size:25px;
+}
+
+.misinopsisr{
+	font-size:17px;
+}
+
+
+.mitrailer{
+	display:block; 
+	width:100%; 
+	border:none;
+	height:100%;
+}
+
+.mibody{
+	background-image: url("./../../imagenes/cine.png");
+	background-position:bottom right;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:200px;
+}
+
+.active{
+	background-color:white;
+}
+
+/*transicion cartel pelicula*/
+
+.micontenedor {
+  position: relative;
+}
+.miimagen {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.mitransicion {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.micontenedor:hover .miimagen {
+  opacity: 0.3;
+}
+.micontenedor:hover .mitransicion {
+  opacity: 1;
+}
+.minombrepe {
+  color: black;
+  font-size: 16px;
+}
+
+/*transicion */
+
+/*links*/
+
+a:link { color:; }          /* Enlaces no visitados */
+a:visited { color:; }     /* Enlaces visitados */
+.minav:hover { background: grey; }  /* El usuario esta sobre el enlace */
+a:active { color:; }		 /* Enlaces activos */
+
+/*Mensaje errores login/registro*/
+
+.milineaerror{
+	font-size:14px;
+	color:red;
+}
+
+.milineavalida{
+	font-size:14px;
+	color:green;
+}
+
+.milineanormal{
+	font-size:14px;
+	color:blue;
+	text-decoration:none;
+}
+
+
+/* ZOOM basico, no furula, revisar por qué*/
+ /*img.zoom {                             
+
+	
+    width: 210px;
+    height: 320px;
+	
+    -webkit-transition: all .2s ease-in-out;			             
+    -moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+
+	margin: 200px;	                                
+	
+	
+}
+ 
+.transition {                                          
+
+											
+    -webkit-transform: scale(1.8);                       
+   	-moz-transform: scale(1.8);
+	-o-transform: scale(1.8);  		 
+    transform: scale(1.8);								 
+	
+}   */

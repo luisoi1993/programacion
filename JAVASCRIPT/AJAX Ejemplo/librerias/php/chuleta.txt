@@ -1,0 +1,14 @@
+BBDD PELICULAS
+TABLAS
+
+PELICULAS (idP,codP?,nombreP,directorP,decripcionP,generoP)
+BUTACAS (idButaca,idSala,fila,columna,estado)
+SALAS (idS,tipoS,numeroButacas)
+USUARIOS(idU,nombreU,apellidoU,correoU,telefonoU,contraseñaU,tipoU(administrador,socio,invitado))
+PAGOS(idUsuario,formaPago,plataformaPago)
+CINES(idC,localidadC,nombreC)
+RESERVA (ENTRADA)(idSala,idPelicula,idUsuario,idHorario,idButaca)
+ACTOR (idA,nombreA,apellidoA)
+DIRECTOR(idD,nombreD,apellidoD)
+GENERO(idG,nombreG)
+CODIGOPELICULA (??)

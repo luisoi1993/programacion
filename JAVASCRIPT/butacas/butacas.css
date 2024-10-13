@@ -1,0 +1,23 @@
+table{
+	width:50%;
+	height:50%;
+}
+
+td{
+padding:30px;
+}
+
+.libre{
+	background-image:url("./imagenes/libre.png");
+	background-size:100%;
+}
+
+.ocupado{
+	background-image:url("./imagenes/ocupado.png");
+	background-size:100%;
+}
+
+.asignado{
+	background-image:url("./imagenes/asignado.png");
+	background-size:100%;
+}
