@@ -1,0 +1,51 @@
+body{
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+header{
+  margin-top: 75px;
+}
+#testimonial {
+  background: #f1f1f1;
+  padding: 50 px 0 30 px 0;
+  text-align: center;
+  margin-top: 40 px;
+}
+
+
+footer{
+  background: url(../img/fondo.jfif);
+
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+.black{
+  color:black;
+}
+
+.carousel-inner{
+ height: 750px;
+}
+
+img.zoom {
+    width: 350px;
+    height: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.8); 
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+}

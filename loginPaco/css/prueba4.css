@@ -1,0 +1,17 @@
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu a + ul {
+  display: none;
+}
+
+.menu li:hover > a {
+  text-decoration:none;
+  background-color:#434343;
+}
+
+.menu a + ul > li
+  display: block;
+  min-width:140px;
+}
