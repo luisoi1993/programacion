@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .carpeta{
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload =inicio;
+      window.addEventListener("load",inicio);
+
+      function inicio(){
+        document.getElementById("crearParrafo").addEventListener("click",crearParrafo);
+        document.getElementById("crearImagen").addEventListener("click",crearImagen);
+        document.getElementById("borrarUltimo").addEventListener("click",borrarUltimo);
+        document.getElementById("sustituirPrimero").addEventListener("click",sustituirPrimero);
+      }
+
+      function crearParrafo(){
+        //crear elemento
+        var parrafo = document.createElement("div");
+        var imagen  = document.createElement("img");
+        imagen.setAttribute("src","carpeta.webp");
+        imagen.setAttribute("class","carpeta");
+
+        parrafo.appendChild(imagen);
+
+        //añadir atributos
+        parrafo.setAttribute("class","miClase");
+        //parrafo.className= "miClase";
+
+        var cont = document.getElementById("div1");
+        cont.appendChild(parrafo);
+
+           }
+
+           function crearImagen(){
+             //crear elemento
+             var imagen  = document.createElement("img");
+
+
+             //añadir atributos
+             var ruta = prompt("Introduce la ruta");
+             imagen.setAttribute("src",ruta);
+             imagen.setAttribute("alt",prompt("introduce el texto"));
+             //imagen.src="ruta";
+
+             var cont = document.getElementById("div1");
+             cont.appendChild(imagen);
+
+                }
+
+                function borrarUltimo(){
+                  var cont = document.getElementById("div1");
+                  var hijo =cont.lastChild;//selecciona el ultimo hijo
+                  cont.removeChild(hijo);
+                }
+
+                function borrarPrimero(){
+                  var cont = document.getelementById("div1");
+                  var hijo =cont.firstChild;//selecciona el ultimo hijo
+                  cont.removeChild(hijo);
+                }
+
+
+    </script>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <br>
+    <textarea id="texto"></textarea>
+    <br>
+    <button id="crearParrafo">Crear parrafo</button>
+    <button id="crearImagen">Crear imagen</button>
+    <button id="borrarUltimo" >Borrar ultimo</button>
+    <button id="sustituirPrimero" >Sustituir primer parrafo</button>
+
+  </body>
+</html>
