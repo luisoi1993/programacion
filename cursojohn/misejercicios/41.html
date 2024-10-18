@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //26.Programa una funcion que dado un arreglo de números obtenga el promedio,
+    // pe, promedio([9,8,7,6,5,4,3,2,1] devolvera 4.5)
+        const promedio = (arr = undefined)=>{
+            if(arr === undefined)return console.warn("no ingresaste un arreglo de numeros");
+
+            if(!(arr instanceof Array))return console.error("El valor que ingresaste no es un arreglo");
+
+            if(arr.length === 0)return console.error("El arreglo esta vacio");
+
+            if(arr.length === 1)return console.error("El arreglo debe tener al menos 2 elementos");
+
+            let promedio = 0, suma = 0, division =0;
+
+            for (const numero of arr) {
+                division++;
+                suma = suma + numero;
+            }
+            
+            promedio = suma/division;
+
+            return console.log(promedio);
+        
+        }
+
+        promedio([4,6,7,2]);
+
+
+    </script>
+</body>
+</html>

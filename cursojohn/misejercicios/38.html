@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //16.programa una funcion que devuelva el monto final despues de aplicar un descuento a una
+        //cantidad dada, pe. miFuncion(1000,20) devolvera 800
+        const descuento =(numero = undefined,descuento = undefined)=>{
+            if(numero === undefined)return console.warn("No ingresaste el número a convertir");
+
+            if(typeof descuento !== "number")return console.error(`El valor "${descuento}"ingresado, No es un numero`);
+
+            if (descuento === undefined)return console.warn("No ingresaste el descuento a restar");
+
+            if(typeof descuento !== "number")return console.error(`El valor "${descuento}" ingresado , NO es un número`);
+
+            let totalDescuento = ((numero/100)* descuento);
+            let total = numero - totalDescuento;
+            
+            return console.log(total);
+        }
+
+        descuento(1000,20);
+        </script>
+</body>
+</html>

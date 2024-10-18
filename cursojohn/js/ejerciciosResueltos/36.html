@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //9.Programa una funcion que devuelva un numero aleatorio entre 501 y 600
+        const aleatorio = () => console.info(Math.round((Math.random()*100)+500));
+
+        aleatorio();
+
+         //10Programa una funcion que reciba un numero y evalue si es capicua o no(que se lee igual en un
+         //sentido que en otro), pe. miFuncion(2002) devolvera true
+         const capicua = (numero = 0)=>{
+            if(!numero)return console.warn("No ingresaste un numero");
+
+            if(typeof numero !== "number")return console.error('El valor "${numero}"ingresado, No es número');
+
+            numero = numero.toString();
+            let alReves = numero.split("").reverse().join("");
+
+            return (numero === alReves)
+            ?console.info(`Si es cpaicua, Número original ${numero}, Número al reves ${alReves}`)
+            :console.info(`No es cpaicua, Número original ${numero}, Número al reves ${alReves}`)
+         }
+
+         capicua();
+         capicua("19");
+         capicua({});
+         capicua(2000);
+         capicua(2002);
+
+         //11.Programa una funcion que calcule el factorial de un número ( el factorial de un entero)
+         //positivo n , se define como el producto de todos los números enteros positivos desde 1 hasta n), pe.
+         //miFuncion(5) devolvera 120
+         const factorial = (numero = undefined)=>{
+            if(numero === undefined)return console.error(`El valor "${numero}ingresado, No es un numero"`);
+
+            if(typeof numero !== "number")return console.error(`El valor "${numero}"ingresado, No es número`);
+
+            if(numero === 0)return console.error("El numero no puede ser 0");
+
+            if(Math.sign(numero)=== -1)return console.error("El numero no puede ser negativo");
+
+            let factorial = 1;
+
+            for(let i = numero; i >1;i--){
+                factorial *= i;
+            }
+
+            return console.info(`El factorial de ${numero} es ${factorial}`);
+         }
+
+         factorial();
+         factorial("5");
+         factorial([1,2,3]);
+         factorial(0);
+         factorial(-5);
+         factorial(5);
+
+    </script>
+</body>
+</html>

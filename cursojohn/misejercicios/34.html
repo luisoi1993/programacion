@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //1.Programas una funcion que cuente el numero de caracteres de una cadena de texto, pe , miFuncion("Hola mundo")
+    //dvolvera 10.
+
+    function cuentaCaracteres(frase = ""){
+        if(!frase){
+            console.warn("No ingresaste ninguna cadena");
+        }else{
+            let cuenta = frase.length;
+            return cuenta; 
+        }
+    }
+
+  
+    //console.log(cuentaCaracteres(""));
+
+    //2.Programa una funcion que te devuelva el texto recortado segun el numero de caracteres indicados
+    //, pe miFuncion("Hola mundo",4) devolvera "Hola";
+    
+    function recortaCaracteres(frase = "",numero = 0){
+        if(!frase){
+            console.warn("No ingresaste ninguna cadena");
+        }else{
+            if(!numero){
+                console.warn("No ingresaste ningun numero");
+            }else{
+                return frase.slice(0,numero);
+            }
+        }
+    }
+   
+
+   console.log(recortaCaracteres("HOla mundo",4));
+
+   //3.Programa una funcion que dada un string te decvuelva un array de textos separados por cierto
+   //carcater, pe |miFuncion('hola que tal',"") devolvera['hola','que','tal']
+    function seperarStrings(frase ="",separador = ""){
+        if(!frase){
+            console.warn("No ingresate la frase");
+        }else{
+            if(!separador){
+                console.warn("no ingresaste el separador")
+            }else{
+                let arr = frase.split(' ');
+                return arr; 
+            }
+        }
+    }
+   
+    console.log(seperarStrings("hola,p,oi,oi",","));
+
+    //4.programa una funcion que repita un texto x veces , pe miFuncion("Hola mundo", 3)devolvera
+    //hola mundo hola mundo hola mundo
+
+    function repetirStrings(frase= "",numero = 0){
+        if(!frase){
+            console.warn("No ingresaste la frase");
+        }else{
+            if(!numero){
+                console.warn("No ingresaste el numero de repeticiones");
+            }else{
+                let todo ="";
+                for(let i=0;i<numero;i++){
+                    console.log(frase);
+                }
+            }
+        }
+    }
+
+   repetirStrings("Hola",3);
+ 
+    
+    </script> 
+</body>
+</html>

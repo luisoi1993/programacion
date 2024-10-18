@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //5.progrma una funcion que invierta las palabras de una cadena de texto , pe, 
+        //miFuncion("Hola Mundo") devolvera "odnuM aloH"
+        const invertirCadena = (cadena = "")=>
+        (!cadena)
+        ?console.warn("No ingresaste una cadena de texto")
+        :console.info(cadena.split("").reverse().join(""));
+
+        invertirCadena();
+        invertirCadena("Hola mundo");
+
+        //6.programa una funcion para contar el numero de veces que se repite una palabra en un texto
+       //largo,pe.miFuncion("hola mundo adios mundo","mundo")
+       const textoEnCadena = (cadena = "",texto ="")=>{
+        if(!cadena)return console.warn("No ingresaste el texto largo");
+        if(!texto)return console.warn("No ingresaste la palara a evaluar");
+
+        let i = 0,
+        contador =0;
+
+        while(i !== -1){
+            i = cadena.indexOf(texto,i);
+            if(i !== -1){
+                i++;
+                contador++;
+            }
+        }
+        return console.info(`La palabra ${texto} se repite ${contador} veces`);
+       }
+       textoEnCadena();
+       textoEnCadena("","mundo");
+       textoEnCadena("hola mundo adios mundo");
+       textoEnCadena("hola mundo adios mundo","mundo");
+
+       //7.Programa una funcion que valide si una palabra o frase dada, es un palindromo (que se lee
+       //igual en un sentido que en otro), pe.miFuncion("salas") devolvera true
+       const palindromo = (palabra = "")=>{
+        if(!palabra)return console.warn("no ingresaste una palabra o frase");
+
+        palabra = palabra.toLowerCase();
+        let alReves = palabra.split("").reverse().join("");
+
+        return (palabra === alReves)
+        ?console.info(`Si es palindromo, Palabra original ${palabra} Palabra al revés ${alReves}`)
+        :console.info(`No es palindromo, palabra original ${palabra}, Palabra al reves ${alReves}`);
+       }
+
+       palindromo();
+       palindromo("hola mundo");
+       palindromo("salas");
+
+       //8.programa una funcion que elimine cierto patron de caracteres de un texto dado, pe.miFuncion
+       //("xyz1,xyz2,xyz3,xyz4","xyz") devolvera 1,2,3,4,5
+       const eliminarCaracteres =(texto ="", patron= "")=>
+       (!texto)
+       ?console.warn("No ingresaste un texto")
+       :(!patron)
+       ?console.warn("no ingresaste un patron con carcteres")
+       :console.info(texto.replace(new RegExp(patron,"ig"),""));
+
+       eliminarCaracteres();
+       eliminarCaracteres("xyz");
+       eliminarCaracteres("xzy1 , xzy2, xzy3","xzy");
+       eliminarCaracteres("v<fgvdksgfhh","[a-z]");
+
+    </script>
+</body>
+</html>

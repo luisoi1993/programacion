@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //22.Programa una funcion que dado un array devuelva el numero mas alto y el mas bajo de dicho
+        //array, pe miFuncion([1,2,5,99,-60]) devolvera [99,-60]
+        const maximoMinimo = (arr = undefined)=>{
+            if(arr === undefined)return console.warn("No ingresaste un areglo de numeros");
+
+            if(!(arr instanceof Array))return console.error("El valor que ingresaste no es un arreglo");
+
+            if(arr.length === 0)return console.error("El arreglo esta vacio");
+
+            for(let num of arr){
+                if(typeof num !== "number")return console.error(`El valor "${num}" ingresado, No es un numero`);
+            }
+            let maximo , minimo;
+            for (const numero of arr) {
+                if 
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

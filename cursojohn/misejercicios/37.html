@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //12programa una funcion que determine si un numero es primo (aquel que solo
+        // es divisible por si mismo y 1) o no , pe miFuncion(7) devolvera true 
+
+        const primo = (numero = undefined)=>{
+            if(numero === undefined)return console.error(`El valor "${numero}ingresado, no es un numero"`);
+
+            if(typeof numero !== "number")return console.error(`El valor "${numero}"" ingresado, No es un numero`);
+            
+            if(numero === 0 )return console.error("El numero no puede ser 0");
+
+            if(Math.sign(numero)=== -1)return console.error("El numero no puede ser negativo");
+
+            let verdadero = false;
+
+            if(numero % numero === 0){
+                verdadero = true;
+            }
+         //no se hacerlo
+
+        }
+        //13.Programa una funcion que determine si un numero es par o impar, pe, miFuncion(29) devolvera
+        //impar
+
+        const paroImpar =(numero = undefined)=>{
+            if(numero === undefined)return console.error(`El valor "${numero}ingresado, no es un numero"`);
+
+            if(typeof numero !== "number")return console.error(`El valor "${numero}"" ingresado, No es un numero`);
+            
+            if(numero === 0 )return console.error("El numero no puede ser 0");
+
+            if(Math.sign(numero)=== -1)return console.error("El numero no puede ser negativo");
+
+            if(numero % 2 === 0){
+                console.log(`El numero ${numero} es par`);
+            }else{
+                console.log(`El numero ${numero} es impar`);
+            }
+        }
+
+        paroImpar(2);
+        paroImpar(3);
+        
+    </script>
+</body>
+</html>

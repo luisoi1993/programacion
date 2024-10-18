@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //5.progrma una funcion que invierta las palabras de una cadena de texto , pe, 
+        //miFuncion("Hola Mundo") devolvera "odnuM aloH"
+        function stringReversa(palabra =""){
+            if(!palabra){
+                console.warn("No ingresate ninguna palabra");
+            }else{
+                let separarPalabra = palabra.split("");
+                let invertirArreglo = separarPalabra.reverse();
+                let unirArreglo = invertirArreglo.join("");
+                return unirArreglo;
+            }
+
+        }
+
+       console.log(stringReversa("oi"));
+
+       //6.programa una funcion para contar el numero de veces que se repite una palabra en un texto
+       //largo,pe.miFuncion("hola mundo adios mundo","mundo")
+       function contarRepeticiones (frase ="",palabra =""){
+        if(!frase){
+            console.log("No ingresaste ninguna frase");
+        }else{
+            if(!palabra){
+                console.log("No ingresaste la palabra a buscar");
+            }else{
+                let i = 0,
+                contador =0;
+
+                while(i !== -1){
+                    i = frase.indexOf(palabra,i);
+                    if(i !== -1){
+                        i++;
+                        contador++;
+                    }
+                }
+                return contador;
+            }
+        }
+       }
+       console.log(contarRepeticiones("hola hola hola","hola"));
+
+       //7.Programa una funcion que valide si una palabra o frase dada, es un palindromo (que se lee
+       //igual en un sentido que en otro), pe.miFuncion("salas") devolvera true
+       function esPalindromo(palabra=""){
+        if(!palabra){
+            console.warn("No ingresaste la palabra");
+        }else{
+            let separarPalabra = palabra.split("");
+            let invertirArreglo = separarPalabra.reverse();
+            let unirArreglo = invertirArreglo.join("");
+            if(palabra === unirArreglo){
+                return true;
+            }else{
+                return false;
+            }
+        }
+       }
+
+       console.log(esPalindromo("oiio"));
+       console.log(esPalindromo("oi"));
+
+    </script>
+</body>
+</html>
