@@ -1,0 +1,4 @@
+1122-HYV;hotel;2022-12-08;2022-12-23;aranjuez
+1132-HYV;residente;2022-12-09;2022-12-17;aranjuez
+1122-HYVl;hotel;2022-12-09;2023-01-01;aranjuez
+1132-HYV;hotel;2022-12-22;2022-12-17;aranjuez
