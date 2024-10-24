@@ -1,0 +1,35 @@
+
+.ui-datepicker{
+ 	font-size: 12px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	 background: #FF5733;
+   border: 1px solid #733;
+   color: #FFD;
+   font-size:34px;
+	/*padding:10px;*/
+}
+
+.ui-datepicker-today {
+  background: blue;
+}
+
+
+.ui-datepicker-week-end, .ui-datepicker-week-end a.ui-state-default {
+	
+	color: red!important;
+	
+	
+	}
+	
+	
+
+.ui-datepicker-prev {
+	float:left;
+}
+ 
+.ui-datepicker-next {
+	float:right;
+}
+

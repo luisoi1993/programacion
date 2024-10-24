@@ -1,0 +1,17 @@
+https://www.netveloper.com/como-crear-un-calendario-con-jquery-y-html // calendario en linea sin caja de texto
+
+https://desarrolloweb.com/articulos/jquery-ui-datepicker-avanzado.html //Botones con funciones
+
+http://jquery-manual.blogspot.com/2013/10/jquery-ui-cambiar-propiedades-css-del_6831.html
+
+https://reviblog.net/2014/01/07/jquery-ui-datepicker-poner-el-calendario-en-espanol-euskera-o-cualquier-otro-idioma/
+
+https://jqueryui.com/datepicker/#animation
+
+https://programmerclick.com/article/12642346861/ //MEEEH, NO SE, mirarlo 
+
+https://www.lawebdelprogramador.com/foros/CSS/1566237-css-para-calendario-jquery.html //EJEMPLO SELECTORES
+
+
+
+FALTAN ANIMACIONES SOLO
